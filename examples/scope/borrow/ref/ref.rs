@@ -9,7 +9,9 @@ fn main() {
     let ref ref_c1 = c;
     let ref_c2 = &c;
 
-    println!("ref_c1 equals ref_c2: {}", *ref_c1 == *ref_c2);
+    println!("ref_c1 equals ref_c2: {}", ref_c1 == ref_c2);
+    println!("ref_c1 and ref_c2 point to the same value: {}",
+             *ref_c1 == *ref_c2);
 
     let point = Point { x: 0, y: 0 };
 
