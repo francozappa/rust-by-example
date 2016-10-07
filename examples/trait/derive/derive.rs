@@ -30,7 +30,7 @@ fn main() {
 
     let foot = Inches(12);
 
-    println!("One foot equals {:?}", foot);
+    println!("One foot equals {:?} in", foot.0);
 
     let meter = Centimeters(100.0);
 
