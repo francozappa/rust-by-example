@@ -37,6 +37,11 @@ impl Rectangle {
         ((x1 - x2) * (y1 - y2)).abs()
     }
 
+    // Methods with same name (and different signatures) are not allowed
+    // Error! `duplicate definitions with name: area`
+    // fn area(&self) {}
+    // TODO ^ Try uncommenting this line
+
     fn perimeter(&self) -> f64 {
         let Point { x: x1, y: y1 } = self.p1;
         let Point { x: x2, y: y2 } = self.p2;
